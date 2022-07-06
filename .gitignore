@@ -37,6 +37,5 @@ yarn-error.log*
 # files
 .env
 
-# folders
-config
+
 
