@@ -7,3 +7,5 @@
 - React Oauth Google
 - Zustand
 - TailwindCSS
+
+[Live](https://tiktok-clone-azure.vercel.app/)
