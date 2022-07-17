@@ -30,7 +30,7 @@ const Upload = () => {
 
   const uploadVideo = async (e: any) => {
     const selectedFile = e.target.files[0];
-    console.log(selectedFile);
+
     const fileTypes = ["video/mp4", "video/webm", "video/ogg"];
 
     // uploading asset to sanity
@@ -164,7 +164,7 @@ const Upload = () => {
             </div>
             {wrongFileType && (
               <p className="text-center text-xl text-red-400 font-semibold w-[260px]">
-                Please select an video file (mp4 or webm or ogg)
+                Please select a video file (mp4, webm, or ogg)
               </p>
             )}
           </div>
