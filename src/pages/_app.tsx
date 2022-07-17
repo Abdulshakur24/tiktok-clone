@@ -26,13 +26,15 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       <GoogleOAuthProvider
         clientId={`${process.env.NEXT_PUBLIC_GOOGLE_API_TOKEN}`}
       >
-        <div className="max-w-[1280px] m-auto max-h-[100vh] :">
-          <Navbar />
+        <div className="max-w-[1280px] min-h-[100vh] m-auto">
+          <div className="w-full max-h-[10vh] flex justify-between items-center border-b-2 border-gray-200 py-2 px-4">
+            <Navbar />
+          </div>
           <div className="flex gap-6 md:gap-20 ">
-            <div>
+            <div className="max-h-[90vh] md:max-h-[88vh] overflow-auto scrollbar-none">
               <Sidebar />
             </div>
-            <div className="flex flex-col gap-10 overflow-auto flex-1">
+            <div className="flex flex-col gap-10 overflow-auto flex-1 max-h-[90vh] md:max-h-[88vh] py-[1rem]">
               <Component {...pageProps} />
             </div>
           </div>
