@@ -28,7 +28,7 @@ const SuggestedAccounts: NextPage<IProps> = ({ fetchAllUsers, allUsers }) => {
       <div>
         {users?.slice(0, 6).map((user: any) => (
           <Link href={`/profile/${user._id}`} key={user._id}>
-            <div className="flex gap-3 hover:bg-primary p-2 cursor-pointer font-semibold rounded">
+            <div className="flex items-center justify-center xl:justify-start gap-3 hover:bg-primary p-2 cursor-pointer font-semibold rounded">
               <div className="w-8 h-8">
                 <Image
                   priority
