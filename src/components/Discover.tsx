@@ -12,7 +12,7 @@ const Discover: NextPage = () => {
     "flex items-center gap-3 hover:bg-[#111] bg-[#000000] p-3 justify-center xl:justify-start cursor-pointer font-semibold text-[#ffffff] rounded";
 
   const normalLink =
-    "flex items-center gap-3 hover:bg-[#515151] hover:text-[white] p-3 justify-center xl:justify-start cursor-pointer font-semibold rounded";
+    "flex items-center gap-3 hover:bg-primary p-3 justify-center xl:justify-start cursor-pointer font-semibold rounded";
 
   return (
     <div className="w-full  xl:border-b-2 xl:border-gray-200 pb-6">
